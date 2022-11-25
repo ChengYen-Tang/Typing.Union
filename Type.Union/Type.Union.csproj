@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<RepositoryUrl>https://github.com/ChengYen-Tang/Type.Union</RepositoryUrl>
+	<Authors>Kenneth Tang</Authors>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<Description>Union typing is only needed when you have a statically typed language, as you need to declare that an object can return one of multiple types (in your case an int or string , or in the other example string or null)</Description>
+  </PropertyGroup>
+
+</Project>
