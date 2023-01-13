@@ -7,13 +7,13 @@ namespace Type
         public abstract void MatchAction(Action<T1> action1, Action<T2> action2, Action<T3> action3, Action<T4> action4);
         public abstract T MatchFunc<T>(Func<T1, T> func1, Func<T2, T> func2, Func<T3, T> func3, Func<T4, T> func4);
 
-        public static explicit operator Union<T1, T2, T3, T4>(T1 value)
+        public static implicit operator Union<T1, T2, T3, T4>(T1 value)
             => new Case1(value);
-        public static explicit operator Union<T1, T2, T3, T4>(T2 value)
+        public static implicit operator Union<T1, T2, T3, T4>(T2 value)
             => new Case2(value);
-        public static explicit operator Union<T1, T2, T3, T4>(T3 value)
+        public static implicit operator Union<T1, T2, T3, T4>(T3 value)
             => new Case3(value);
-        public static explicit operator Union<T1, T2, T3, T4>(T4 value)
+        public static implicit operator Union<T1, T2, T3, T4>(T4 value)
             => new Case4(value);
 
         internal sealed class Case1 : Union<T1, T2, T3, T4>

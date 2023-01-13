@@ -7,9 +7,9 @@ namespace Type
         public abstract void MatchAction(Action<T1> action1, Action<T2> action2);
         public abstract T MatchFunc<T>(Func<T1, T> func1, Func<T2, T> func2);
 
-        public static explicit operator Union<T1, T2>(T1 value)
+        public static implicit operator Union<T1, T2>(T1 value)
             => new Case1(value);
-        public static explicit operator Union<T1, T2>(T2 value)
+        public static implicit operator Union<T1, T2>(T2 value)
             => new Case2(value);
 
         internal sealed class Case1 : Union<T1, T2>

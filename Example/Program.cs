@@ -5,17 +5,17 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Print((Union<int, string, string[]>)5);
-        Print((Union<int, string, string[]>)"Hello");
-        Print((Union<int, string, string[]>)new[] { "Hello", "World" });
+        Print(5);
+        Print("Hello");
+        Print(new[] { "Hello", "World" });
         //Output:
         //5
         //Hello
         //Hello, World
 
-        Console.WriteLine(GetStringLength((Union<int, string, string[]>)100));
-        Console.WriteLine(GetStringLength((Union<int, string, string[]>)"Hello"));
-        Console.WriteLine(GetStringLength((Union<int, string, string[]>)new[] { "Hello", "World" }));
+        Console.WriteLine(GetStringLength(100));
+        Console.WriteLine(GetStringLength("Hello"));
+        Console.WriteLine(GetStringLength(new[] { "Hello", "World" }));
         //Output:
         //3
         //5
