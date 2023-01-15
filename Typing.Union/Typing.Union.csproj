@@ -1,24 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-	<RepositoryUrl>https://github.com/ChengYen-Tang/Type.Union</RepositoryUrl>
+	<RepositoryUrl>https://github.com/ChengYen-Tang/Typing.Union</RepositoryUrl>
 	<Authors>Kenneth Tang</Authors>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	<Description>Union typing is only needed when you have a statically typed language, as you need to declare that an object can return one of multiple types (in your case an int or string , or in the other example string or null)</Description>
-	<Version>1.1.0</Version>
-	<AssemblyVersion>1.1.0</AssemblyVersion>
-	<FileVersion>1.1.0</FileVersion>
 	<PackageTags>Union</PackageTags>
-	<PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\Readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
 
 </Project>

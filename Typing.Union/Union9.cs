@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Type
+namespace Typing
 {
     public abstract class Union<T1, T2, T3, T4, T5, T6, T7, T8, T9>
     {

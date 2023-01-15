@@ -1,4 +1,4 @@
-﻿using Type;
+﻿using Typing;
 
 namespace Example;
 public class Program
